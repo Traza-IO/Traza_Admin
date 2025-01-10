@@ -12,21 +12,6 @@ export default defineConfig({
     outDir: '../dist',
     emptyOutDir: true,
     chunkSizeWarningLimit: 1000000000,
-    rollupOptions: {
-      output: {
-        manualChunks: (id) => {
-          if (id.includes('node_modules')) {
-            if (id.includes('@chakra-ui')) {
-              return 'chakra-ui'; // Agrupar todos los módulos de Chakra UI en un solo bundle
-            }
-            if (id.includes('@dfinity')) {
-              return 'dfinity-libs'; // Agrupar todas las dependencias de dfinity
-            }
-            return 'vendor'; // Resto de los módulos de node_modules
-          }
-        },
-      },
-    },
   },
   optimizeDeps: {
     esbuildOptions: {
