@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^3.2.5",
+    "@dfinity/agent": "^2.2.0",
+    "@dfinity/auth-client": "^2.2.0",
+    "@dfinity/principal": "^2.2.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@ic-reactor/react": "^1.7.8",

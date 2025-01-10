@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import LoginForm from '../components/modules/LoginForm';
-import LoginButton from '../components/general/LoginButton';
+import LoginButton from '../components/general/LoginModalButton';
 
 const LoginPage: React.FC = () => {
   return (
