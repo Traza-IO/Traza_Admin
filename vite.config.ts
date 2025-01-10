@@ -11,7 +11,6 @@ export default defineConfig({
   build: {
     outDir: '../dist',
     emptyOutDir: true,
-    chunkSizeWarningLimit: 1000000000,
   },
   optimizeDeps: {
     esbuildOptions: {

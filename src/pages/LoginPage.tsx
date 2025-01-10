@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react';
 import LoginForm from '../components/modules/LoginForm';
-// import LoginButton from '../components/general/LoginButton';
+import LoginButton from '../components/general/LoginButton';
 
 const LoginPage: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const LoginPage: React.FC = () => {
       bgGradient="linear(to-r, blue.50, blue.100)"
     >
       <LoginForm />
-      {/* <LoginButton /> */}
+      <LoginButton />
     </Flex>
   );
 };
