@@ -21,13 +21,10 @@
 //       props;
 //     return (
 //       <ChakraAvatar.Root ref={ref} {...rest}>
-//         <AvatarFallback name={name} icon={icon} />
-//         {fallback}
-//         <ChakraAvatar.Image
-//           src={src}
-//           srcSet={srcSet}
-//           loading={loading as ImageProps['loading']}
-//         />
+//         <AvatarFallback name={name} icon={icon}>
+//           {fallback}
+//         </AvatarFallback>
+//         <ChakraAvatar.Image src={src} srcSet={srcSet} loading={loading} />
 //         {children}
 //       </ChakraAvatar.Root>
 //     );

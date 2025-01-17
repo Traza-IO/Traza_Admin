@@ -21,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({ links }) => {
       flexDirection="column"
     >
       <Text fontSize="xl" fontWeight="bold" mb={6}>
-        Mi Proyecto
+        TRAZA
       </Text>
 
       <VStack gap={4} align="start">
@@ -37,7 +37,7 @@ const Sidebar: React.FC<SidebarProps> = ({ links }) => {
             <Flex align="center" gap={2}>
               <>
                 {/* <Icon as={link.icon} boxSize={5} /> */}
-                <Text>{link.name}</Text>
+                <Text color="white">{link.name}</Text>
               </>
             </Flex>
           </Link>
