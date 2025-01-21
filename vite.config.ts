@@ -3,11 +3,13 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import environment from 'vite-plugin-environment';
 import dotenv from 'dotenv';
+import tsconfigPaths from 'vite-tsconfig-paths';
+import path from 'path';
 
 dotenv.config();
 
 export default defineConfig({
-  root: 'src',
+  root: '.',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
@@ -31,10 +33,14 @@ export default defineConfig({
     react(),
     environment('all', { prefix: 'CANISTER_' }),
     environment('all', { prefix: 'DFX_' }),
+    tsconfigPaths(),
   ],
   test: {
     environment: 'jsdom',
     setupFiles: 'setupTests.ts',
     cache: { dir: '../node_modules/.vitest' },
+  },
+  resolve: {
+    alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
   },
 });
