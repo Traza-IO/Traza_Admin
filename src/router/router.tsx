@@ -11,10 +11,13 @@ const AppRoutes: React.FC = () => {
         <Route path="/login" element={<LoginPage />} />
 
         {/* Página principal */}
-        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/" element={<HomePage />} /> */}
 
         {/* Ruta para manejar errores 404 */}
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+
+        {/* Ruta para Home */}
+        <Route path="/home" element={<HomePage />} />
       </Routes>
     </Router>
   );
